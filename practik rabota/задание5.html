@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прикладные программы</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            background-color: #CCFFCC; /* Поменял цвет фона квадратика */
+            padding: 20px;
+            width: fit-content;
+            border-radius: 5px;
+        }
+        h1 {
+            color: darkred;
+        }
+        ul, ul ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .nested ul {
+            padding-left: 20px;
+        }
+        .nested li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+        }
+        .nested li:before {
+            content: "•→";
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Прикладные программы</h1>
+        <ol>
+            <li>Текстовые редакторы;</li>
+            <li>Графические редакторы;</li>
+            <li>Электронные таблицы;</li>
+            <li>Системы компьютерной математики:
+                <div class="nested">
+                    <ul>
+                        <li> Mathematica</li>
+                        <li> MathCad</li>
+                        <li> Maple</li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
